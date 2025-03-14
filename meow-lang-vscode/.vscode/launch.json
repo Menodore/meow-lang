@@ -1,0 +1,29 @@
+{
+    "name": "meow-lang",
+    "displayName": "Meow Language",
+    "description": "A VS Code extension for the Meow programming language",
+    "version": "0.0.1",
+    "publisher": "yourname",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+      "languages": [
+        {
+          "id": "meow",
+          "aliases": ["Meow", "meow"],
+          "extensions": [".meow"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "meow",
+          "scopeName": "source.meow",
+          "path": "./syntaxes/meow.tmLanguage.json"
+        }
+      ]
+    }
+  }
+  
