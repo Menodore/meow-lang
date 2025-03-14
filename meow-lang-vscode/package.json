@@ -1,15 +1,28 @@
 {
-  "name": "meow-lang-vscode",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "meow-lang",
+  "displayName": "Meow Language",
+  "description": "A VS Code extension for the Meow programming language",
+  "version": "0.0.1",
+  "publisher": "Ananya Srivastava",
+  "engines": {
+    "vscode": "^1.60.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@vscode/vsce": "^3.2.2"
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "meow",
+        "aliases": ["Meow", "meow"],
+        "extensions": [".meow"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "meow",
+        "scopeName": "source.meow",
+        "path": "./syntaxes/meow.tmLanguage.json"
+      }
+    ]
   }
 }
