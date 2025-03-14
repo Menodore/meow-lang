@@ -1,0 +1,23 @@
+{
+    "scopeName": "source.meow",
+    "name": "Meow",
+    "patterns": [
+      {
+        "match": "\\b(Say Meow)\\b",
+        "name": "keyword.control.meow"
+      },
+      {
+        "match": "\\b(Meow)\\b",
+        "name": "keyword.declaration.meow"
+      },
+      {
+        "match": "\\b(Hello Meow|Bye Meow)\\b",
+        "name": "keyword.control.startend.meow"
+      },
+      {
+        "match": "\".*?\"",
+        "name": "string.quoted.double.meow"
+      }
+    ]
+  }
+  
